@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Math
-%define		pnam	CDF
+%define	pdir	Math
+%define	pnam	CDF
 Summary:	Math::CDF - probabilities and quantiles for several statistical functions
 Summary(pl):	Math::CDF - prawdopodobieñstwa i kwantyle dla niektórych funkcji statystycznych
 Name:		perl-Math-CDF
