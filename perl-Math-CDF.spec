@@ -9,7 +9,7 @@ Summary:	Math::CDF - probabilities and quantiles for several statistical functio
 Summary(pl):	Math::CDF - prawdopodobieñstwa i kwantyle dla niektórych funkcji statystycznych
 Name:		perl-Math-CDF
 Version:	0.1
-Release:	1
+Release:	2
 # non-commercial because of some parts of DCDFLIB
 License:	non-commercial
 Group:		Development/Languages/Perl
@@ -17,7 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version
 Patch0:		%{name}-system-dcdflib.patch
 BuildRequires:	dcdflib.c-devel
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,7 +43,8 @@ funkcje kwantyli dla 7 ci±g³ych rozk³adów.
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %{!?_without_tests:%{__make} test}
@@ -60,9 +61,9 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/Math/CDF.pm
-%dir %{perl_sitearch}/auto/Math/CDF
-%{perl_sitearch}/auto/Math/CDF/CDF.bs
-%attr(755,root,root) %{perl_sitearch}/auto/Math/CDF/CDF.so
-%{perl_sitearch}/auto/Math/CDF/autosplit.ix
+%{perl_vendorarch}/Math/CDF.pm
+%dir %{perl_vendorarch}/auto/Math/CDF
+%{perl_vendorarch}/auto/Math/CDF/CDF.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/Math/CDF/CDF.so
+%{perl_vendorarch}/auto/Math/CDF/autosplit.ix
 %{_mandir}/man3/*
