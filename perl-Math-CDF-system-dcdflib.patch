@@ -1,0 +1,22 @@
+--- Math-CDF-0.1/Makefile.PL.orig	Wed Dec 29 03:48:11 1999
++++ Math-CDF-0.1/Makefile.PL	Sat Dec  7 01:13:50 2002
+@@ -3,7 +3,7 @@
+     'NAME'	   => 'Math::CDF',
+     'VERSION_FROM' => 'CDF.pm',
+     'LIBS'         => ['-lm'],
+-    'MYEXTLIB'     => 'cdflib/libcdflib$(LIB_EXT)',
++    'MYEXTLIB'     => '-lcdflib',
+     'dist'         => { COMPRESS=>"gzip -9", SUFFIX=>"gz" },
+ );
+ 
+--- Math-CDF-0.1/CDF.xs.orig	Wed Jan  5 07:23:02 2000
++++ Math-CDF-0.1/CDF.xs	Sat Dec  7 01:13:36 2002
+@@ -1,7 +1,7 @@
+ #include "EXTERN.h"
+ #include "perl.h"
+ #include "XSUB.h"
+-#include "cdflib/cdflib.h"
++#include <cdflib.h>
+ 
+ #ifndef PATCHLEVEL
+ #include <patchlevel.h>
