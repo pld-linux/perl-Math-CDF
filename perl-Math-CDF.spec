@@ -41,7 +41,7 @@ funkcje kwantyli dla 7 ci±g³ych rozk³adów.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
