@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	CDF
 Summary:	Math::CDF - probabilities and quantiles for several statistical functions
-Summary(pl):	Math::CDF - prawdopodobieñstwa i kwantyle dla niektórych funkcji statystycznych
+Summary(pl.UTF-8):   Math::CDF - prawdopodobieÅ„stwa i kwantyle dla niektÃ³rych funkcji statystycznych
 Name:		perl-Math-CDF
 Version:	0.1
 Release:	2
@@ -30,14 +30,14 @@ are available for the Chi-square, F and T-distributions. Cumulative
 probabilities are available for all 9 distributions and quantile
 functions are available for the 7 continuous distributions.
 
-%description -l pl
-Ten modu³ udostêpnia perlowy interfejs do biblioteki DCDFLIB. Dostêpne
-s± funkcje dla 7 rozk³adów ci±g³ych (Beta, Chi-kwadrat, F, Gamma,
-normalnego, Poissona, t Studenta) oraz dwóch dyskretnych (dwumianowego
-i odwrotnego dwumianowego). Dostêpne s± opcjonalne parametry
-niecentralno¶ci dla rozk³adów Chi-kwadrat, F i t Studenta. Funkcje
-rozk³adu prawdopodobieñstwa s± dostêpne dla wszystkich 9 rozk³adów, a
-funkcje kwantyli dla 7 ci±g³ych rozk³adów.
+%description -l pl.UTF-8
+Ten moduÅ‚ udostÄ™pnia perlowy interfejs do biblioteki DCDFLIB. DostÄ™pne
+sÄ… funkcje dla 7 rozkÅ‚adÃ³w ciÄ…gÅ‚ych (Beta, Chi-kwadrat, F, Gamma,
+normalnego, Poissona, t Studenta) oraz dwÃ³ch dyskretnych (dwumianowego
+i odwrotnego dwumianowego). DostÄ™pne sÄ… opcjonalne parametry
+niecentralnoÅ›ci dla rozkÅ‚adÃ³w Chi-kwadrat, F i t Studenta. Funkcje
+rozkÅ‚adu prawdopodobieÅ„stwa sÄ… dostÄ™pne dla wszystkich 9 rozkÅ‚adÃ³w, a
+funkcje kwantyli dla 7 ciÄ…gÅ‚ych rozkÅ‚adÃ³w.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
