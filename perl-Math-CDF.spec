@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	CDF
 Summary:	Math::CDF - probabilities and quantiles for several statistical functions
-Summary(pl.UTF-8):   Math::CDF - prawdopodobieństwa i kwantyle dla niektórych funkcji statystycznych
+Summary(pl.UTF-8):	Math::CDF - prawdopodobieństwa i kwantyle dla niektórych funkcji statystycznych
 Name:		perl-Math-CDF
 Version:	0.1
 Release:	2
