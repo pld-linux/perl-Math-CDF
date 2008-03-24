@@ -13,9 +13,10 @@ Release:	2
 # non-commercial because of some parts of DCDFLIB
 License:	non-commercial
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	7866c7b6b9d27f0ce4b7637334478ab7
 Patch0:		%{name}-system-dcdflib.patch
+URL:		http://search.cpan.org/dist/Math-CDF/
 BuildRequires:	dcdflib.c-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
