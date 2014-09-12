@@ -67,7 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %{perl_vendorarch}/Math/CDF.pm
 %dir %{perl_vendorarch}/auto/Math/CDF
-%{perl_vendorarch}/auto/Math/CDF/CDF.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Math/CDF/CDF.so
 %{perl_vendorarch}/auto/Math/CDF/autosplit.ix
 %{_mandir}/man3/*
