@@ -9,7 +9,7 @@ Summary:	Math::CDF - probabilities and quantiles for several statistical functio
 Summary(pl.UTF-8):	Math::CDF - prawdopodobieństwa i kwantyle dla niektórych funkcji statystycznych
 Name:		perl-Math-CDF
 Version:	0.1
-Release:	8
+Release:	9
 # non-commercial because of some parts of DCDFLIB
 License:	non-commercial
 Group:		Development/Languages/Perl
